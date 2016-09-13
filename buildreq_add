@@ -1,0 +1,10 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+docbook-xml
+Linux-PAM-dev
+glibc-staticdev
+libgcrypt-dev
+libcap-ng-dev
+libxslt-bin
+valgrind
+libgpg-error-dev
