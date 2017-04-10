@@ -4,9 +4,9 @@
 #
 Name     : gnome-keyring
 Version  : 3.20.0
-Release  : 1
-URL      : https://download.gnome.org/core/3.21/3.21.4/sources/gnome-keyring-3.20.0.tar.xz
-Source0  : https://download.gnome.org/core/3.21/3.21.4/sources/gnome-keyring-3.20.0.tar.xz
+Release  : 2
+URL      : https://download.gnome.org/core/3.22/3.22.0/sources/gnome-keyring-3.20.0.tar.xz
+Source0  : https://download.gnome.org/core/3.22/3.22.0/sources/gnome-keyring-3.20.0.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.1
@@ -87,10 +87,12 @@ locales components for the gnome-keyring package.
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1491866604
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
 %install
+export SOURCE_DATE_EPOCH=1491866604
 rm -rf %{buildroot}
 %make_install
 %find_lang gnome-keyring
@@ -125,6 +127,6 @@ rm -rf %{buildroot}
 /usr/lib64/pkcs11/gnome-keyring-pkcs11.so
 /usr/lib64/security/pam_gnome_keyring.so
 
-%files locales -f gnome-keyring.lang 
+%files locales -f gnome-keyring.lang
 %defattr(-,root,root,-)
 
