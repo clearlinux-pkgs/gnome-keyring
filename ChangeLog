@@ -1,5 +1,213 @@
 # Generate automatically. Do not edit.
 
+commit 0196028a5081f1d988113bab7a52da448cf59413
+Author: Debarshi Ray <debarshir@gnome.org>
+Date:   2017-07-04
+
+    Bump version number
+
+ NEWS         | 9 +++++++++
+ configure.ac | 2 +-
+ 2 files changed, 10 insertions(+), 1 deletion(-)
+
+commit bf8aa977e4cadadeb12e950231837b339a525d32
+Author: gogo <trebelnik2@gmail.com>
+Date:   2016-09-22
+
+    Updated Croatian translation
+
+ po/hr.po | 51 +++++++++++++--------------------------------------
+ 1 file changed, 13 insertions(+), 38 deletions(-)
+
+commit d2fe967a9803003b298166a5fa9ea307038df932
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   2016-08-22
+
+    Updated Polish translation
+
+ po/pl.po | 154 +++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 65 insertions(+), 89 deletions(-)
+
+commit 7cbd534a8b7aa79deba94c751d51732b9872bd61
+Author: Felix Zhang <fezhang@suse.com>
+Date:   2016-08-20
+
+    Shorten unlock keyring dialog title
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=770170
+
+ pkcs11/wrap-layer/gkm-wrap-prompt.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit a6e91294dd629cd4a57dfaad461f1734ad1beb82
+Author: Iain Lane <iain@orangesquash.org.uk>
+Date:   2016-07-19
+
+    Die if the XDG session we were started under goes away
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=768943
+
+ daemon/gkd-main.c | 158 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 158 insertions(+)
+
+commit 98975178d625b48658c1b2ca46cab4c953dc0f08
+Author: Fabio Tomat <f.t.public@gmail.com>
+Date:   2016-08-11
+
+    Updated Friulian translation
+
+ po/fur.po | 96 +++++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 53 insertions(+), 43 deletions(-)
+
+commit 9b271f7033401a329df1caf71eb1407dd9e69226
+Author: Fabio Tomat <f.t.public@gmail.com>
+Date:   2016-08-11
+
+    Updated Friulian translation
+
+ po/fur.po | 68 +++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 34 insertions(+), 34 deletions(-)
+
+commit 6cf3ee0516acc6af45b12bf9952988b0fc74ead9
+Author: Fabio Tomat <f.t.public@gmail.com>
+Date:   2016-08-11
+
+    Updated Friulian translation
+
+ po/fur.po | 37 +++++++++++++++++++++----------------
+ 1 file changed, 21 insertions(+), 16 deletions(-)
+
+commit 116bea50dd17446a94ebfb5fa763ca70136c6a71
+Author: Fabio Tomat <f.t.public@gmail.com>
+Date:   2016-08-11
+
+    Added Friulian translation
+
+ po/LINGUAS |   1 +
+ po/fur.po  | 510 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 511 insertions(+)
+
+commit e7d4185ad7bde454142453e2135f9dbb2447897a
+Author: Sinisa Habek <sinisa@habek.net>
+Date:   2016-07-23
+
+    Updated Croatian translation
+
+ po/hr.po | 609 +++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 322 insertions(+), 287 deletions(-)
+
+commit 8f8d4f604bdfeaac0bb1c9eb311ed128e20e0a5b
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   2016-07-19
+
+    Add Language headers to po files
+    
+    Future versions of gettext will fail if this header is missing.
+
+ po/as.po          | 1 +
+ po/az.po          | 2 +-
+ po/be@latin.po    | 2 +-
+ po/ca@valencia.po | 2 +-
+ po/dz.po          | 2 +-
+ po/en@shaw.po     | 2 +-
+ po/en_CA.po       | 2 +-
+ po/es.po          | 2 +-
+ po/fa.po          | 1 +
+ po/fr.po          | 1 +
+ po/gu.po          | 2 +-
+ po/hu.po          | 2 +-
+ po/id.po          | 2 +-
+ po/km.po          | 1 +
+ po/ko.po          | 2 +-
+ po/mg.po          | 2 +-
+ po/ml.po          | 2 +-
+ po/ms.po          | 2 +-
+ po/nb.po          | 2 +-
+ po/oc.po          | 2 +-
+ po/sl.po          | 2 +-
+ po/sq.po          | 2 +-
+ po/sr@latin.po    | 2 +-
+ po/ta.po          | 2 +-
+ po/te.po          | 2 +-
+ po/tg.po          | 2 +-
+ po/ug.po          | 2 +-
+ po/zh_HK.po       | 2 +-
+ po/zh_TW.po       | 2 +-
+ 29 files changed, 29 insertions(+), 25 deletions(-)
+
+commit 1f637dd577b10354c4a3494481a7a1f937a8afc5
+Author: Michael Biebl <biebl@debian.org>
+Date:   2016-06-01
+
+    man: Fix .so link in gnome-keyring-3
+    
+    Manual files that use the .so links to include other pages should only
+    point to a path relative to the top-level manual hierarchy.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=767095
+
+ docs/gnome-keyring-3.1 | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 7f383fbf43ac3f3240a86d8ea64fe40a87764801
+Author: Cédric Valmary <cvalmary@yahoo.fr>
+Date:   2016-05-30
+
+    Updated Occitan translation
+
+ po/oc.po | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 4e6eca91e13edcfda811f89c994ee723744afed6
+Author: Iain Lane <iain@orangesquash.org.uk>
+Date:   2016-05-10
+
+    Look for both dlopen and dlsym when configuring
+    
+    We use both, and they may not both be exposed by libc but by libdl
+    instead.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=766221
+
+ configure.ac | 25 ++++++++++++++++++++-----
+ 1 file changed, 20 insertions(+), 5 deletions(-)
+
+commit 0d283e5a743d5da6150601ba2228c7c3d9418acd
+Author: Iain Lane <iain@orangesquash.org.uk>
+Date:   2016-05-10
+
+    pam: Pass the correct argc to gkr_pam_client_run_operation
+    
+    If there's no password then there are no arguments. This prevents a
+    crash in keyring_daemon_op (), which loops over argv and would otherwise
+    dereference a null pointer.
+    
+    https://bugzilla.gnome.org/show_bug.cgi?id=766222
+
+ pam/gkr-pam-module.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 0baccbec4c9adc589f990270a2b47cc49bcd20ad
+Author: Cédric Valmary <cvalmary@yahoo.fr>
+Date:   2016-05-09
+
+    Updated Occitan translation
+
+ po/oc.po | 14 ++++++++------
+ 1 file changed, 8 insertions(+), 6 deletions(-)
+
+commit 3f64b67a66b42a23879d4904086676827138bcd8
+Author: Michael McConville <mmcco@mykolab.com>
+Date:   2016-04-18
+
+    ssh-agent: Fix boolean logic error
+    
+    Signed-off-by: Stef Walter <stefw@redhat.com>
+     * From the gnome-keyring-list mailing list
+
+ daemon/ssh-agent/gkd-ssh-agent.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 commit daabb5f5e3d1b2741b0f1f0601c0e8b789409f08
 Author: Stef Walter <stefw@gnome.org>
 Date:   2016-03-25
@@ -5765,7 +5973,7 @@ Date:   2012-06-19
  10 files changed, 349 insertions(+), 144 deletions(-)
 
 commit 6f97ecf2773281fa2b4d38301f27d27bf6e26d0c
-Merge: 425394b c53bb44
+Merge: 425394b296ec c53bb448d90e
 Author: Stef Walter <stefw@gnome.org>
 Date:   2012-06-19
 
@@ -5912,7 +6120,7 @@ Date:   2012-04-16
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 3dbb05de1942561c142a9333cde07abc9d94da0b
-Merge: 223e914 7dc9217
+Merge: 223e91453c0b 7dc921797986
 Author: Stef Walter <stefw@gnome.org>
 Date:   2012-04-16
 
@@ -7140,7 +7348,7 @@ Date:   2011-10-01
  9 files changed, 1683 insertions(+), 1 deletion(-)
 
 commit d08d382f2a3a4d22b676f3787e8ad6f504947dd5
-Merge: 7681245 45c20e1
+Merge: 7681245859ce 45c20e1d2613
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-12-15
 
@@ -7398,7 +7606,7 @@ Date:   2011-11-21
  1 file changed, 7 insertions(+)
 
 commit d2128ffc09d4c9b4aa6b5a0ed2d81819a0a2af1d
-Merge: 01d4e6d 81f51c7
+Merge: 01d4e6de0c82 81f51c700996
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-11-21
 
@@ -7681,7 +7889,7 @@ Date:   2011-10-24
  1 file changed, 6 insertions(+)
 
 commit 471f694e6b08ce8b79e9ce9a53f780485c9ddf19
-Merge: 54be473 bc01094
+Merge: 54be47350e65 bc01094411d7
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-10-24
 
@@ -7842,7 +8050,7 @@ Date:   2011-10-08
  1 file changed, 951 insertions(+), 88 deletions(-)
 
 commit f1765dbccb3f02610c7e649d610305db60433042
-Merge: 9922eae f28d3d7
+Merge: 9922eae17ffb f28d3d768f0e
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-10-08
 
@@ -9715,7 +9923,7 @@ Date:   2011-09-26
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 commit b2231e0b7a27764d84d6008a167ca866a0d7a36e
-Merge: f575afb e337f08
+Merge: f575afb81aad e337f08d3eaf
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-09-26
 
@@ -9878,7 +10086,7 @@ Date:   2011-09-26
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 11e02c37d374f200804802470c554582d8c1e402
-Merge: 6f9ad5f 0c592c2
+Merge: 6f9ad5f2cf6d 0c592c29d85c
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-09-26
 
@@ -10173,7 +10381,7 @@ Date:   2011-09-19
  1 file changed, 2 insertions(+), 5 deletions(-)
 
 commit d5629603cc2d6785e4add32326c333ef327d7562
-Merge: 26fb02a 3f60c65
+Merge: 26fb02aced1b 3f60c65cc0f5
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-09-19
 
@@ -10189,7 +10397,7 @@ Date:   2011-09-19
  1 file changed, 1 insertion(+)
 
 commit 325533c3e934ee90da403e0355f18b1c5bd0cb68
-Merge: 3e0d0bb 03b4084
+Merge: 3e0d0bbc831f 03b40841cc34
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-09-19
 
@@ -11779,7 +11987,7 @@ Date:   2011-08-18
  1 file changed, 549 insertions(+), 845 deletions(-)
 
 commit 73ac0ac4b752af59750c4dfa28448a4776339c50
-Merge: 29d81c6 2ef650d
+Merge: 29d81c67073e 2ef650d1fa43
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-08-17
 
@@ -11952,7 +12160,7 @@ Date:   2011-07-18
  1 file changed, 6 insertions(+)
 
 commit d739f96614965c76cab67d1f5d25f25b1f4764ef
-Merge: f2bfa48 73f773b
+Merge: f2bfa4832d17 73f773ba26bf
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-07-18
 
@@ -12205,7 +12413,7 @@ Date:   2011-05-12
  9 files changed, 393 insertions(+), 19 deletions(-)
 
 commit 73e11d9b3bc2680b90ec8ab1c10bcc7ba8524f50
-Merge: 20b7ec0 e2ca61d
+Merge: 20b7ec068267 e2ca61d31229
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-07-12
 
@@ -12564,7 +12772,7 @@ Date:   2011-06-07
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 06d89c6e2578655b7380c6c47a27ed2cd3e48897
-Merge: 8008e3f 6bd797c
+Merge: 8008e3f660a0 6bd797cff9d4
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-06-07
 
@@ -12610,7 +12818,7 @@ Date:   2011-06-04
  1 file changed, 218 insertions(+), 90 deletions(-)
 
 commit f555936f6cc4de65d1cdb67257836b5fd58b6f3b
-Merge: afdd535 65c9d54
+Merge: afdd535fa2c8 65c9d546623d
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-06-04
 
@@ -12626,7 +12834,7 @@ Date:   2011-05-31
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 commit afdd535fa2c8ad57cc1f14a073ac90275d2bd14e
-Merge: 68551ba 5b3e79b
+Merge: 68551ba68ebe 5b3e79b3b2a0
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-05-31
 
@@ -12694,7 +12902,7 @@ Date:   2011-05-28
  1 file changed, 295 insertions(+), 209 deletions(-)
 
 commit b6928fd48a08f380fae02d0d2ea39a361c697825
-Merge: 8674d10 17ad20f
+Merge: 8674d10429d9 17ad20f549ff
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-05-26
 
@@ -12771,7 +12979,7 @@ Date:   2011-04-06
  7 files changed, 578 insertions(+), 30 deletions(-)
 
 commit 8510dcb39aeeb9e4b7230da4401f24f1bd64d614
-Merge: 40fb2e4 0f84906
+Merge: 40fb2e404ede 0f84906348a2
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-05-24
 
@@ -12781,14 +12989,14 @@ Date:   2011-05-24
     	gcr/Makefile.am
 
 commit 40fb2e404ede6dc8b16dff865c3feec06ac3518f
-Merge: 2468d94 e037705
+Merge: 2468d94afdd3 e037705a7228
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-05-24
 
     Merge branch 'display-hex'
 
 commit 2468d94afdd30afa9713abd8d35a36046aababe7
-Merge: 1705a85 7b5e4e3
+Merge: 1705a8555b8c 7b5e4e3c1e8c
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-05-24
 
@@ -13358,7 +13566,7 @@ Date:   2011-05-09
  3 files changed, 16 insertions(+), 2 deletions(-)
 
 commit 4b36d7578819ade6986f7c85cbbeb20265d6bce8
-Merge: 89b8c29 aebb7bf
+Merge: 89b8c2937e5d aebb7bf38169
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-05-09
 
@@ -13490,7 +13698,7 @@ Date:   2011-04-25
  3 files changed, 806 insertions(+), 806 deletions(-)
 
 commit 410aa647a4514bb20867164b0946173f514d0710
-Merge: ba0956a 2ac257d
+Merge: ba0956a99d1e 2ac257db4414
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-04-25
 
@@ -13841,7 +14049,7 @@ Date:   2011-04-15
  3 files changed, 136 insertions(+)
 
 commit 2a45c4bc0bb500d6e33f237d73568671a01c4d64
-Merge: 1cfa84f 433e014
+Merge: 1cfa84f0e809 433e01465456
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-04-21
 
@@ -14068,7 +14276,7 @@ Date:   2011-04-18
  1 file changed, 2 deletions(-)
 
 commit e4faefb8ed07f6e6fa220c96c4591bc7b5f004e7
-Merge: c0dc972 0005213
+Merge: c0dc9725f667 00052136a0fd
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-04-18
 
@@ -14244,7 +14452,7 @@ Date:   2011-04-12
  1 file changed, 197 insertions(+), 159 deletions(-)
 
 commit 93e0450c2581b11ae2481b1ecf206f16949b495a
-Merge: 26d111d 771b9b9
+Merge: 26d111dc5623 771b9b90900e
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-04-09
 
@@ -14365,7 +14573,7 @@ Date:   2011-04-08
  6 files changed, 47 insertions(+), 36 deletions(-)
 
 commit 4557d759ccf929ad80d2244bc14fe10ac2f06560
-Merge: 843fdea 122c6a6
+Merge: 843fdea648fd 122c6a6c541f
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-04-08
 
@@ -14670,7 +14878,7 @@ Date:   2011-04-05
  16 files changed, 812 insertions(+), 661 deletions(-)
 
 commit 67d57140601c00227704dcb4fb90901954c0816e
-Merge: 60c77d9 a4f19ca
+Merge: 60c77d997d71 a4f19ca99086
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-04-05
 
@@ -15265,7 +15473,7 @@ Date:   2011-03-19
  1 file changed, 28 insertions(+), 20 deletions(-)
 
 commit a92ba0d0f306d4eaa6bf5eb5503a7ec71afa530e
-Merge: 2b2c163 eeeddb5
+Merge: 2b2c163ddc05 eeeddb576005
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-03-19
 
@@ -15835,7 +16043,7 @@ Date:   2011-03-09
  1 file changed, 20 insertions(+), 12 deletions(-)
 
 commit 655e0e90a4f96de76348f84cab0c64014078fdbb
-Merge: ced422b a26d779
+Merge: ced422b8770b a26d779ee623
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-03-09
 
@@ -16032,14 +16240,14 @@ Date:   2011-03-01
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 88f1bdf12908c7fa77cf263fd2aa6cf6bfea1b3c
-Merge: 077170f 24d586d
+Merge: 077170f8eb59 24d586d74b49
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-03-01
 
     Merge branch 'secret-content-type'
 
 commit 077170f8eb5937809d229fccfd1ce286edc3766e
-Merge: c4fa069 9ba7ec4
+Merge: c4fa06918c5d 9ba7ec409f6e
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2011-03-01
 
@@ -16924,7 +17132,7 @@ Date:   2010-12-22
  10 files changed, 48 insertions(+), 17 deletions(-)
 
 commit f98b8d0cb814f5c5862a66b0182a6c67358551a6
-Merge: f631b23 e3438dc
+Merge: f631b2374575 e3438dc739ed
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2010-12-22
 
@@ -17141,7 +17349,7 @@ Date:   2010-12-13
  2 files changed, 10 insertions(+), 5 deletions(-)
 
 commit dc618d06a2293d9d315da431c94b2bb5f507b428
-Merge: 5470f81 a47bf28
+Merge: 5470f81b5a02 a47bf28ad2a0
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2010-12-13
 
@@ -17608,7 +17816,7 @@ Date:   2010-12-06
  3 files changed, 86 insertions(+), 3 deletions(-)
 
 commit fb277c5b6056ef53e35dc4805cf313c02cbe6080
-Merge: dc3e7af f397c29
+Merge: dc3e7af8a1c6 f397c297c7a1
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2010-12-06
 
@@ -17626,7 +17834,7 @@ Date:   2010-12-06
  1 file changed, 4 insertions(+)
 
 commit dc3e7af8a1c631fc01230208d4b5a90b243bf3b2
-Merge: 84f4415 4d1f139
+Merge: 84f44154cdfc 4d1f1393f839
 Author: Stef Walter <stefw@collabora.co.uk>
 Date:   2010-12-06
 
@@ -18331,7 +18539,7 @@ Date:   2010-11-13
  1 file changed, 213 insertions(+), 195 deletions(-)
 
 commit d2ce4a0263db1d15cb89b7170aa671753be92b23
-Merge: c29d406 5379f76
+Merge: c29d40617d3e 5379f76cbbd0
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-11-11
 
@@ -18702,14 +18910,14 @@ Date:   2010-10-06
  1 file changed, 286 insertions(+), 262 deletions(-)
 
 commit 8236c4c064e667ee641ed3376820b198493e3878
-Merge: 03f0af6 dc0799a
+Merge: 03f0af67d2be dc0799ac1efe
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-10-05
 
     Merge branch 'ui-widgets'
 
 commit 03f0af67d2be523fdb38f18ff07b3497cc3d301e
-Merge: 1c54c69 b9d8bdd
+Merge: 1c54c699a660 b9d8bddb2418
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-10-05
 
@@ -18774,7 +18982,7 @@ Date:   2010-10-01
  4 files changed, 10 insertions(+), 7 deletions(-)
 
 commit 58e1cc0cd81ee5abd22303c5bf68a5daf0a134b0
-Merge: b1ec84d 83605a4
+Merge: b1ec84dd2527 83605a438ab7
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-10-01
 
@@ -18845,7 +19053,7 @@ Date:   2010-10-01
  1 file changed, 361 insertions(+), 329 deletions(-)
 
 commit 4671e0383067ec198bd99ff3d39158215b34b510
-Merge: 3ec5f82 58240b9
+Merge: 3ec5f82795e3 58240b9acdd6
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-10-01
 
@@ -19643,14 +19851,14 @@ Date:   2010-09-14
  1 file changed, 5 insertions(+), 5 deletions(-)
 
 commit dc0799ac1efecfb002df7c4c4f898df9e112505d
-Merge: 8349031 c7f954a
+Merge: 8349031dc46a c7f954aafdc4
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-09-13
 
     Merge branch 'gck-work' into ui-widgets
 
 commit c7f954aafdc4de66ccf191e72fcd93353047e7f5
-Merge: 8ea37e4 10cfc8e
+Merge: 8ea37e4098fe 10cfc8e7bf03
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-09-12
 
@@ -19668,7 +19876,7 @@ Date:   2010-09-12
  3 files changed, 25 insertions(+), 2 deletions(-)
 
 commit c596dc6943c61039d5bc5366e872397bd58f5c52
-Merge: 4738c64 5845892
+Merge: 4738c645ee59 5845892d3596
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-09-12
 
@@ -19733,7 +19941,7 @@ Date:   2010-09-11
  1 file changed, 14 insertions(+), 17 deletions(-)
 
 commit f3c08bb6f286da296d28efc7e626569f8c3b565b
-Merge: 7b0231d 83dd6f1
+Merge: 7b0231dbdaf4 83dd6f13ab0a
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-09-11
 
@@ -19808,7 +20016,7 @@ Date:   2010-09-08
  1 file changed, 303 insertions(+), 297 deletions(-)
 
 commit 05e3b53a7729c77c0b146ff6553bd925c7ddc6e7
-Merge: 18ffda4 7a80709
+Merge: 18ffda45b68e 7a8070979d8a
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-09-08
 
@@ -20047,7 +20255,7 @@ Date:   2010-09-01
  1 file changed, 19 insertions(+), 7 deletions(-)
 
 commit 995bf0069468ad82f228d6737e17796ffbaf6028
-Merge: d9ef944 2b308e5
+Merge: d9ef94455d11 2b308e57df63
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-09-01
 
@@ -20420,7 +20628,7 @@ Date:   2010-08-27
  6 files changed, 98 insertions(+)
 
 commit 1d9ff263ef2a5ddd8faa4d2297e816e3d9cd363b
-Merge: 999087a 9ea8cbd
+Merge: 999087a9836e 9ea8cbd7a7cf
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-08-28
 
@@ -20662,7 +20870,7 @@ Date:   2010-08-09
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 commit 88fa3a11c5ad14c24ce3247c6f2ca45f9dfc6c01
-Merge: cea36ad 201ad31
+Merge: cea36adf672a 201ad316423a
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-08-08
 
@@ -20892,7 +21100,7 @@ Date:   2010-07-30
  1 file changed, 1 insertion(+), 55 deletions(-)
 
 commit cb95c2ce58c48f64f563a2fe383421a40222ef88
-Merge: d52556b 0e9d1f4
+Merge: d52556bfe9f5 0e9d1f40f44b
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-07-30
 
@@ -21495,14 +21703,14 @@ Date:   2010-06-28
  1 file changed, 54 insertions(+), 32 deletions(-)
 
 commit ed1054ef7c9456b3c15a8c4f5600effbe075990d
-Merge: 4d611ac 606b73f
+Merge: 4d611ac5962a 606b73fda831
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-06-28
 
     Merge branch 'gpg-agent'
 
 commit 4d611ac5962a6bc63431fac22eefdce4264f2477
-Merge: dec880c e76c499
+Merge: dec880cbef02 e76c4996a36f
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-06-28
 
@@ -21839,7 +22047,7 @@ Date:   2010-06-13
  6 files changed, 242 insertions(+), 40 deletions(-)
 
 commit 83f3fe1a8016231f5f6a30bee3017eeb53511c58
-Merge: 24528a0 e258971
+Merge: 24528a0434e5 e258971767cd
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-06-13
 
@@ -21882,7 +22090,7 @@ Date:   2010-06-13
  11 files changed, 51 insertions(+), 34 deletions(-)
 
 commit 24528a0434e5bcd5778f5f60f16bb41c62cfed43
-Merge: 4837c53 6ec9f78
+Merge: 4837c53ab9fa 6ec9f78a8e25
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-06-12
 
@@ -21910,7 +22118,7 @@ Date:   2010-06-12
  2 files changed, 2 insertions(+), 1 deletion(-)
 
 commit 445771d2a6c07f9f056434db96e1749aa3befc53
-Merge: 302db3f ec61791
+Merge: 302db3f520c9 ec61791ca431
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2010-06-12
 
@@ -23705,7 +23913,7 @@ Date:   2010-03-10
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 9f0db94b0a01b11b2146634c053924d1655d9504
-Merge: d7dc0b3 10ddeed
+Merge: d7dc0b3c276d 10ddeed5f860
 Author: Vincent Untz <vuntz@gnome.org>
 Date:   2010-03-10
 
@@ -25529,7 +25737,7 @@ Date:   2009-12-15
  7 files changed, 501 insertions(+), 4 deletions(-)
 
 commit 31dd65410484ae760d77725697b6708985391466
-Merge: 9ea4667 cbb8aad
+Merge: 9ea4667cf8af cbb8aaddd270
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-12-14
 
@@ -26051,7 +26259,7 @@ Date:   2009-11-25
  12 files changed, 726 insertions(+), 17 deletions(-)
 
 commit 996db6eebd41f5aaf2da9bb272a76be33d45666f
-Merge: ace62ca 1f22585
+Merge: ace62caa70c2 1f225859713c
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-11-24
 
@@ -26345,7 +26553,7 @@ Date:   2009-11-16
  13 files changed, 243 insertions(+), 26 deletions(-)
 
 commit a448d02af2414291fb77890e1034620b475147e2
-Merge: c0622ce c33349f
+Merge: c0622ce0b626 c33349fbaf8a
 Author: Stefan Walter <stef@ws.local>
 Date:   2009-11-15
 
@@ -26655,7 +26863,7 @@ Date:   2009-11-10
  1 file changed, 6 insertions(+), 6 deletions(-)
 
 commit da336e8e56b98a2c8a0789238c5db0c05503e50a
-Merge: 2055447 0c08225
+Merge: 20554475915e 0c082256221e
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-11-09
 
@@ -26684,7 +26892,7 @@ Date:   2009-11-09
  2 files changed, 10 insertions(+), 1 deletion(-)
 
 commit 20554475915e2ab019f9441cb643afe650471f5d
-Merge: 2a04edf 70b4a23
+Merge: 2a04edfa1167 70b4a236c78c
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-11-09
 
@@ -27169,7 +27377,7 @@ Date:   2009-10-24
  3 files changed, 33 insertions(+), 5 deletions(-)
 
 commit aa9f1886654f897e8897b5e3f155e9224c5df464
-Merge: ffdafbc ea5fe62
+Merge: ffdafbcc51dd ea5fe6215b7a
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-10-24
 
@@ -27254,7 +27462,7 @@ Date:   2009-10-11
  6 files changed, 731 insertions(+), 1 deletion(-)
 
 commit 1286e3c553b3e03ca2b0fbb4cdcafa9cf06e6861
-Merge: 9e37d22 1c6fc47
+Merge: 9e37d2273e61 1c6fc47e9aba
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-10-10
 
@@ -27359,7 +27567,7 @@ Date:   2009-10-04
  6 files changed, 275 insertions(+)
 
 commit 9a19c9fee19259ea0effa8879408a66297e6f4ad
-Merge: 13545a9 0eb9a70
+Merge: 13545a93d229 0eb9a70dfad3
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-10-04
 
@@ -27391,7 +27599,7 @@ Date:   2009-10-01
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 commit 13545a93d229613938746d1212d5f4c24cb978dd
-Merge: 0b60338 3341fb9
+Merge: 0b60338100d2 3341fb92230e
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-09-30
 
@@ -27439,7 +27647,7 @@ Date:   2009-09-27
  1 file changed, 3 insertions(+)
 
 commit 768e29571e871c07615708a3e9cbc15e2b85f267
-Merge: ddee2e7 b7bb8bc
+Merge: ddee2e798da8 b7bb8bcfaa02
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-09-26
 
@@ -27972,7 +28180,7 @@ Date:   2009-08-30
  1 file changed, 3 insertions(+)
 
 commit 85ccdcfe3ca4b6b01e446b76760e2e038fd30b2f
-Merge: a1b0215 0fa6f05
+Merge: a1b021547622 0fa6f05cfced
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-08-30
 
@@ -28668,7 +28876,7 @@ Date:   2009-08-15
  1 file changed, 22 insertions(+), 13 deletions(-)
 
 commit 5b7534a73963d48baded578db27320902cf37976
-Merge: cbd6ed8 b404c5a
+Merge: cbd6ed86f6f3 b404c5af71bb
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-08-15
 
@@ -29394,7 +29602,7 @@ Date:   2009-07-23
  12 files changed, 416 insertions(+), 419 deletions(-)
 
 commit d31e4f0b4bfb79e0fd95767ff6fe165020b03aa0
-Merge: d9d9544 0275804
+Merge: d9d95445cc70 0275804640cc
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-07-23
 
@@ -29975,7 +30183,7 @@ Date:   2009-07-19
  1 file changed, 61 insertions(+), 7 deletions(-)
 
 commit a957c0ed1fbf61d355e8d0eed8fdfac969ec4e37
-Merge: 40a9f2a 5baf704
+Merge: 40a9f2aa3e0a 5baf7048a690
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-07-19
 
@@ -30216,7 +30424,7 @@ Date:   2009-07-18
  6 files changed, 633 insertions(+), 654 deletions(-)
 
 commit 28bf965222e58c0eae7eb76ff0143ce3b86a6fda
-Merge: 92251a5 d69fdd3
+Merge: 92251a5d0995 d69fdd36a700
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-07-18
 
@@ -30486,7 +30694,7 @@ Date:   2009-07-13
  5 files changed, 17 insertions(+), 55 deletions(-)
 
 commit cb32f8b10ca51afa699afdaf339029aa5fbd0e74
-Merge: 6c92cd1 eccba13
+Merge: 6c92cd1c56f3 eccba135c041
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-07-13
 
@@ -30560,7 +30768,7 @@ Date:   2009-06-27
  6 files changed, 365 insertions(+), 353 deletions(-)
 
 commit 78dd7109bd834f8c335137da06cdbc5f67f077fb
-Merge: 1251b19 0ac8ef2
+Merge: 1251b19def3e 0ac8ef230ab8
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-06-27
 
@@ -30755,7 +30963,7 @@ Date:   2009-06-10
  1 file changed, 1244 insertions(+), 292 deletions(-)
 
 commit 1166aab82a8d2152ea3259d75c3ec99ae02e625a
-Merge: f824505 bea1715
+Merge: f824505952f1 bea17154da4c
 Author: Stef Walter <stef@memberwebs.com>
 Date:   2009-06-26
 
@@ -31306,7 +31514,7 @@ Date:   2009-05-10
  5 files changed, 93 insertions(+), 162 deletions(-)
 
 commit 2e331bf3f47d7ae91f4939919c3a43c86199a4e0
-Merge: 7a71860 e26bf33
+Merge: 7a71860ef8c1 e26bf33456cc
 Author: Stefan Walter <Stefan Walter>
 Date:   2009-05-03
 

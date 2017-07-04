@@ -1,0 +1,9 @@
+Configure miss: struct cmsgcred
+Configure miss: getpeerucred
+Configure miss: getpeereid
+Configure miss: x86_64-generic-linux-gnu-libgcrypt-config
+Configure miss: getfilecon in -lselinux
+Configure miss: P11_TESTS
+Configure miss: build strict
+Configure miss: whether to build with gcov testing
+Configure miss: valgrind
