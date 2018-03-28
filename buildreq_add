@@ -8,3 +8,4 @@ libcap-ng-dev
 libxslt-bin
 valgrind
 libgpg-error-dev
+openssh
