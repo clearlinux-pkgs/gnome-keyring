@@ -4,7 +4,7 @@
 #
 Name     : gnome-keyring
 Version  : 3.28.2
-Release  : 7
+Release  : 8
 URL      : https://download.gnome.org/sources/gnome-keyring/3.28/gnome-keyring-3.28.2.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-keyring/3.28/gnome-keyring-3.28.2.tar.xz
 Summary  : No detailed summary available
