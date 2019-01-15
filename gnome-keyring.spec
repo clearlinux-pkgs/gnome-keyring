@@ -4,21 +4,24 @@
 #
 Name     : gnome-keyring
 Version  : 3.28.2
-Release  : 10
+Release  : 12
 URL      : https://download.gnome.org/sources/gnome-keyring/3.28/gnome-keyring-3.28.2.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-keyring/3.28/gnome-keyring-3.28.2.tar.xz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.1
-Requires: gnome-keyring-bin
-Requires: gnome-keyring-lib
-Requires: gnome-keyring-data
-Requires: gnome-keyring-locales
-Requires: gnome-keyring-doc
+Requires: gnome-keyring-bin = %{version}-%{release}
+Requires: gnome-keyring-data = %{version}-%{release}
+Requires: gnome-keyring-lib = %{version}-%{release}
+Requires: gnome-keyring-license = %{version}-%{release}
+Requires: gnome-keyring-locales = %{version}-%{release}
+Requires: gnome-keyring-man = %{version}-%{release}
 BuildRequires : Linux-PAM-dev
+BuildRequires : buildreq-gnome
 BuildRequires : docbook-xml
 BuildRequires : gettext
 BuildRequires : glibc-staticdev
+BuildRequires : libcap-dev
 BuildRequires : libcap-ng-dev
 BuildRequires : libgcrypt-dev
 BuildRequires : libgpg-error-dev
@@ -43,7 +46,9 @@ other applications locate it via an environment variable or a D-Bus.
 %package bin
 Summary: bin components for the gnome-keyring package.
 Group: Binaries
-Requires: gnome-keyring-data
+Requires: gnome-keyring-data = %{version}-%{release}
+Requires: gnome-keyring-license = %{version}-%{release}
+Requires: gnome-keyring-man = %{version}-%{release}
 
 %description bin
 bin components for the gnome-keyring package.
@@ -57,21 +62,22 @@ Group: Data
 data components for the gnome-keyring package.
 
 
-%package doc
-Summary: doc components for the gnome-keyring package.
-Group: Documentation
-
-%description doc
-doc components for the gnome-keyring package.
-
-
 %package lib
 Summary: lib components for the gnome-keyring package.
 Group: Libraries
-Requires: gnome-keyring-data
+Requires: gnome-keyring-data = %{version}-%{release}
+Requires: gnome-keyring-license = %{version}-%{release}
 
 %description lib
 lib components for the gnome-keyring package.
+
+
+%package license
+Summary: license components for the gnome-keyring package.
+Group: Default
+
+%description license
+license components for the gnome-keyring package.
 
 
 %package locales
@@ -82,6 +88,14 @@ Group: Default
 locales components for the gnome-keyring package.
 
 
+%package man
+Summary: man components for the gnome-keyring package.
+Group: Default
+
+%description man
+man components for the gnome-keyring package.
+
+
 %prep
 %setup -q -n gnome-keyring-3.28.2
 
@@ -90,15 +104,22 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1525704391
+export SOURCE_DATE_EPOCH=1547569250
 %configure --disable-static
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1525704391
+export SOURCE_DATE_EPOCH=1547569250
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/gnome-keyring
+cp COPYING %{buildroot}/usr/share/package-licenses/gnome-keyring/COPYING
+cp COPYING.LIB %{buildroot}/usr/share/package-licenses/gnome-keyring/COPYING.LIB
 %make_install
 %find_lang gnome-keyring
+## install_append content
+mkdir -p %{buildroot}/usr/share/xdg/autostart
+cp %{buildroot}/etc/xdg/autostart/* %{buildroot}/usr/share/xdg/autostart/
+## install_append end
 
 %files
 %defattr(-,root,root,-)
@@ -115,10 +136,9 @@ rm -rf %{buildroot}
 /usr/share/dbus-1/services/org.freedesktop.secrets.service
 /usr/share/dbus-1/services/org.gnome.keyring.service
 /usr/share/glib-2.0/schemas/org.gnome.crypto.cache.gschema.xml
-
-%files doc
-%defattr(-,root,root,-)
-%doc /usr/share/man/man1/*
+/usr/share/xdg/autostart/gnome-keyring-pkcs11.desktop
+/usr/share/xdg/autostart/gnome-keyring-secrets.desktop
+/usr/share/xdg/autostart/gnome-keyring-ssh.desktop
 
 %files lib
 %defattr(-,root,root,-)
@@ -128,6 +148,17 @@ rm -rf %{buildroot}
 /usr/lib64/gnome-keyring/devel/gkm-xdg-store-standalone.so
 /usr/lib64/pkcs11/gnome-keyring-pkcs11.so
 /usr/lib64/security/pam_gnome_keyring.so
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/gnome-keyring/COPYING
+/usr/share/package-licenses/gnome-keyring/COPYING.LIB
+
+%files man
+%defattr(0644,root,root,0755)
+/usr/share/man/man1/gnome-keyring-3.1
+/usr/share/man/man1/gnome-keyring-daemon.1
+/usr/share/man/man1/gnome-keyring.1
 
 %files locales -f gnome-keyring.lang
 %defattr(-,root,root,-)
