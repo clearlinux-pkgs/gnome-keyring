@@ -1,0 +1,2 @@
+mkdir -p %{buildroot}/usr/share/xdg/autostart
+cp %{buildroot}/etc/xdg/autostart/* %{buildroot}/usr/share/xdg/autostart/
