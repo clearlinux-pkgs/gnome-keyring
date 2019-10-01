@@ -1,8 +1,18 @@
-Changes in version 3.28.2 are:
- * Fix glitches in ssh-agent [#795699]
+Changes in version 3.34.0 are:
+ * dbus-environment: Race fix in Setenv request to gnome-session [!19]
+ * egg: Request that secure memory not be dumped to disk [!15]
+ * Build and test fixes [!16, !20, !24, ...]
+ * Updated translations
 
-Changes in version 3.28.0.2 are:
- * Fix glitches in ssh-agent [#794361, #794368, #794369, #794500, #794631]
+Changes in version 3.31.91 are:
+ * pam: fix daemon control file detection [!11]
+ * Updated translations
+
+Changes in version 3.31.90 are:
+ * pam: lookup XDG_RUNTIME_DIR using get_any_env [!5]
+ * Reinstate pkcs11 module for specific programs [!7, !8]
+ * Build fixes [!4, !9, !10]
+ * Updated translations
 
 Changes in version 3.28.0.1 are:
  * Fix linking with "-z defs" [#794274]
