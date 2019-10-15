@@ -4,7 +4,7 @@
 #
 Name     : gnome-keyring
 Version  : 3.34.0
-Release  : 13
+Release  : 14
 URL      : https://download.gnome.org/sources/gnome-keyring/3.34/gnome-keyring-3.34.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-keyring/3.34/gnome-keyring-3.34.0.tar.xz
 Summary  : No detailed summary available
