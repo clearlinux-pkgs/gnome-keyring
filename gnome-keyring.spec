@@ -4,7 +4,7 @@
 #
 Name     : gnome-keyring
 Version  : 3.36.0
-Release  : 15
+Release  : 16
 URL      : https://download.gnome.org/sources/gnome-keyring/3.36/gnome-keyring-3.36.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-keyring/3.36/gnome-keyring-3.36.0.tar.xz
 Summary  : No detailed summary available
