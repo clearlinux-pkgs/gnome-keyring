@@ -1,6 +1,6 @@
-Configure miss: struct cmsgcred
-Configure miss: getfilecon in -lselinux
 Configure miss: P11_TESTS
 Configure miss: build strict
-Configure miss: whether to build with gcov testing
+Configure miss: getfilecon in -lselinux
+Configure miss: struct cmsgcred
 Configure miss: valgrind
+Configure miss: whether to build with gcov testing
