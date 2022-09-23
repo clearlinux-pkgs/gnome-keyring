@@ -4,7 +4,7 @@
 #
 Name     : gnome-keyring
 Version  : 42.1
-Release  : 19
+Release  : 20
 URL      : https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
 Summary  : No detailed summary available
