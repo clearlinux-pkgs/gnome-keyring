@@ -4,7 +4,7 @@
 #
 Name     : gnome-keyring
 Version  : 42.1
-Release  : 20
+Release  : 21
 URL      : https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-keyring/42/gnome-keyring-42.1.tar.xz
 Summary  : No detailed summary available
@@ -114,7 +114,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1653424678
+export SOURCE_DATE_EPOCH=1664148981
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -124,11 +124,11 @@ export CXXFLAGS="$CXXFLAGS -fno-lto "
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1653424678
+export SOURCE_DATE_EPOCH=1664148981
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/gnome-keyring
-cp %{_builddir}/gnome-keyring-42.1/COPYING %{buildroot}/usr/share/package-licenses/gnome-keyring/4cc77b90af91e615a64ae04893fdffa7939db84c
-cp %{_builddir}/gnome-keyring-42.1/COPYING.LIB %{buildroot}/usr/share/package-licenses/gnome-keyring/01a6b4bf79aca9b556822601186afab86e8c4fbf
+cp %{_builddir}/gnome-keyring-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gnome-keyring/4cc77b90af91e615a64ae04893fdffa7939db84c || :
+cp %{_builddir}/gnome-keyring-%{version}/COPYING.LIB %{buildroot}/usr/share/package-licenses/gnome-keyring/01a6b4bf79aca9b556822601186afab86e8c4fbf || :
 %make_install
 %find_lang gnome-keyring
 ## install_append content
