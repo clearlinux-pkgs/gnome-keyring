@@ -9,3 +9,6 @@ libxslt-bin
 valgrind
 libgpg-error-dev
 openssh
+
+# for test suite...
+dbus
