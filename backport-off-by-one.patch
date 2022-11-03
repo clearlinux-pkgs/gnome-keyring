@@ -1,0 +1,11 @@
+--- gnome-keyring-42.1/pam/gkr-pam-module.c~	2020-06-01 11:37:11.000000000 +0000
++++ gnome-keyring-42.1/pam/gkr-pam-module.c	2022-11-03 15:46:35.934250400 +0000
+@@ -378,7 +378,7 @@
+ 	}
+ 
+ 	/* Try valiantly to close unnecessary file descriptors */
+-	for (i = STDERR; i < 64; ++i)
++	for (i = STDERR + 1; i < 64; ++i)
+ 		close (i);
+ 	    
+ 	/* Close unnecessary file descriptors */
