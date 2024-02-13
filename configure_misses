@@ -1,6 +1,16 @@
-Configure miss: P11_TESTS
+Configure miss: build strict
 Configure miss: build strict
 Configure miss: getfilecon in -lselinux
+Configure miss: getfilecon in -lselinux
+Configure miss: p11-tests >= 0.1
+Configure miss: p11-tests >= 0.1
+Configure miss: struct cmsgcred
 Configure miss: struct cmsgcred
 Configure miss: valgrind
+Configure miss: valgrind
 Configure miss: whether to build with gcov testing
+Configure miss: whether to build with gcov testing
+Configure miss: whether to build with ssh-agent
+Configure miss: whether to build with ssh-agent
+Configure miss: x86_64-generic-linux-gnu-file
+Configure miss: x86_64-generic-linux-gnu-file
