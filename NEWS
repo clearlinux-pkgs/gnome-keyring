@@ -1,3 +1,24 @@
+Changes in version 48.0 are:
+ * build: Disable ssh-agent by default (and related fixes) [!94]
+ * Updated translations
+
+Changes in version 48.beta are:
+ * secret-portal: Set a label for an application key [!32]
+ * secret-portal: Set xdg:schema for secrets [!89]
+ * egg-secure-memory: Allocate enough space for the guard pointers [!43,#36]
+ * Fix several leaks found by asan [!71,!85,!87,!88]
+ * daemon: Randomize control directory in tests [!86]
+ * meson: Bump minimal meson version to 1.0
+ * meson: Bump minimal GLib version to 2.80
+ * meson: Remove dependency on gcr-ui-3 [!91]
+ * build: Fix several deprecations
+ * Updated translations
+
+Changes in version 48.alpha are:
+ * build: Switch from autootools to Meson [!25]
+ * pam: add check for stash password [!76]
+ * ssh-agent: Don't ship autostart desktop if disabled [!82]
+
 Changes in version 46.2 are:
  * Don't use `bool` as variable name
  * autogoo: replace AC_HELP_STRING with AS_HELP_STRING

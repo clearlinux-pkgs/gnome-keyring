@@ -4,5 +4,4 @@
 autostart
 gnome-keyring-pkcs11.desktop
 gnome-keyring-secrets.desktop
-gnome-keyring-ssh.desktop
 xdg
